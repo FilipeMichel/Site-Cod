@@ -1,0 +1,131 @@
+/* Estilo geral */
+body {
+    background-image: url("https://images7.alphacoders.com/109/1096536.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho fixo no topo */
+header {
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: auto;
+}
+
+header h1 {
+    font-size: 4.7em; /* Ajuste para o tamanho do título */
+    margin: 0;
+}
+
+.tag {
+    color: white;
+    font-weight: bold;
+}
+
+.descricao {
+    font-size: 1.7em;
+    margin-top: 50px;
+}
+
+/* Botão centralizado */
+main {
+    flex-grow: 1; /* Faz o main ocupar o espaço central */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão */
+.botao {
+    display: inline-block;
+    background-color: #8A2BE2;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.5em;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #7a22d2;
+}
+
+/* Seção de Avaliações */
+.avaliacoes {
+    position: fixed;
+    top: 25%; /* Ajusta a posição para cima */
+    right: 20px;
+    width: 250px; /* Diminui a largura do quadro */
+    height: 40%; /* Aumenta a altura do quadro para 40% */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+    overflow: hidden; /* Esconde as avaliações que saem da área visível */
+}
+
+.avaliacoes h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Estilo das avaliações */
+.avaliacao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease-in-out; /* Adiciona a transição de movimento */
+    height: 100%; /* Garante que o contêiner tenha a altura total */
+}
+
+.avaliacao {
+    margin-bottom: 10px;
+}
+
+/* Rodapé fixo na parte inferior */
+footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Diminui a distância entre os ícones */
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.social-links img {
+    width: 20px; /* Ajusta o tamanho das logos */
+    height: 20px; /* Ajusta o tamanho das logos */
+}
+
+/* Estilo para o slogan */
+.slogan {
+    font-size: 1.4em;
+    color: yellow;
+    margin-top: 0;
+}
