@@ -1,0 +1,178 @@
+/* Estilos globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Botão de Alternância de Tema */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+header h1 {
+    font-size: 4em;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+header p {
+    font-size: 1.5em;
+    color: #bbb;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Seção de Serviços */
+.servicos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.servico {
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: calc(37% - 20px);
+    height: 360px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.servico:hover {
+    transform: scale(1.05);
+}
+
+.servico h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.servico p {
+    font-size: 1.2em;
+    color: #bbb;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #8A2BE2;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+    background-color: #7a22d2;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #bbb;
+    background-color: #1e1e1e;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer a {
+    color: #8A2BE2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Tema claro */
+body.light-theme {
+    color: #121212;
+    background-color: #f4f4f4;
+}
+
+body.light-theme header h1 {
+    color: #333;
+}
+
+body.light-theme header p {
+    color: #666;
+}
+
+body.light-theme .servico {
+    background-color: #fff;
+    color: #121212;
+}
+
+body.light-theme .servico h2 {
+    color: #333;
+}
+
+body.light-theme .servico p {
+    color: #666;
+}
+
+body.light-theme .botao {
+    background-color: #8A2BE2;
+    color: #fff;
+}
+
+body.light-theme .botao:hover {
+    background-color: #7a22d2;
+}
+
+body.light-theme footer {
+    background-color: #e0e0e0;
+    color: #666;
+}
+
+body.light-theme footer a {
+    color: #8A2BE2;
+}
