@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.8em;
+}
+
+.subtitle {
+    font-size: 1.6em;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+#toggle-theme {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.2em; /* Diminuir o padding */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em; /* Diminuir o tamanho da fonte */
+}
+
+.services {
+    display: grid;
+    gap: 20px; /* Diminuir o espaço entre os cards */
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas grandes */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 1.5em; /* Diminuir o padding dos cards */
+    text-align: left;
+    font-size: 1.1em; /* Diminuir o tamanho da fonte */
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    font-size: 1.8em; /* Diminuir o tamanho do título */
+    margin-bottom: 1em;
+}
+
+.card p {
+    font-size: 1em; /* Ajustar o tamanho da fonte do parágrafo */
+    margin-bottom: 1.2em; /* Diminuir o espaçamento entre o parágrafo e o botão */
+}
+
+.details-btn {
+    display: block;
+    width: 100%;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 0.8em; /* Diminuir o padding do botão */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em; /* Diminuir o tamanho da fonte do botão */
+    transition: background-color 0.3s ease;
+}
+
+/* Tema escuro */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme .card {
+    background-color: #444;
+}
+
+.dark-theme #toggle-theme {
+    background-color: #555;
+}
+
+/* Seção de Bots */
+.bots {
+    display: grid;
+    gap: 20px; /* Diminuir o espaço entre os cards */
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas grandes */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.bot {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 1.5em; /* Diminuir o padding dos cards */
+    text-align: left;
+    font-size: 1.1em; /* Diminuir o tamanho da fonte */
+    transition: transform 0.3s ease;
+}
+
+.bot h2 {
+    font-size: 1.8em; /* Diminuir o tamanho do título */
+    margin-bottom: 1em;
+}
+
+.bot p {
+    font-size: 1em; /* Ajustar o tamanho da fonte do parágrafo */
+    margin-bottom: 1.2em; /* Diminuir o espaçamento entre o parágrafo e o botão */
+}
+
+.details-btn {
+    display: block;
+    width: 100%;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 0.8em; /* Diminuir o padding do botão */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em; /* Diminuir o tamanho da fonte do botão */
+    transition: background-color 0.3s ease;
+}
+
+/* Tema escuro */
+.dark-theme .bots {
+    background-color: #333;
+}
+
+.dark-theme .bot {
+    background-color: #444;
+}
+
+.dark-theme .details-btn {
+    background-color: #555;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1.4em;
+    }
+
+    #toggle-theme {
+        top: 20px;
+        right: 20px;
+        font-size: 1em;
+        padding: 0.8em 1.2em;
+    }
+
+    .card {
+        padding: 1.2em; /* Ajuste do padding */
+    }
+
+    .card h2 {
+        font-size: 1.6em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .details-btn {
+        font-size: 1em;
+        padding: 0.7em;
+    }
+
+    .bot {
+        padding: 1.2em; /* Ajuste do padding */
+    }
+
+    .bot h2 {
+        font-size: 1.6em;
+    }
+
+    .bot p {
+        font-size: 0.9em;
+    }
+
+    .details-btn {
+        font-size: 1em;
+        padding: 0.7em;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .subtitle {
+        font-size: 1.3em;
+    }
+
+    .services {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr); /* Manter 2 colunas até em telas menores */
+    }
+
+    .card {
+        padding: 1em; /* Ajuste do padding */
+    }
+
+    .card h2 {
+        font-size: 1.4em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .details-btn {
+        font-size: 0.9em;
+        padding: 0.6em;
+    }
+
+    .bot {
+        padding: 1em; /* Ajuste do padding */
+    }
+
+    .bot h2 {
+        font-size: 1.4em;
+    }
+
+    .bot p {
+        font-size: 0.8em;
+    }
+
+    .details-btn {
+        font-size: 0.9em;
+        padding: 0.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 1.1em;
+    }
+
+    .services {
+        gap: 10px; /* Ajustar o gap para dispositivos móveis */
+        grid-template-columns: 1fr; /* 1 coluna em dispositivos móveis */
+    }
+
+    .card {
+        padding: 1em; /* Ajuste do padding */
+    }
+
+    .card h2 {
+        font-size: 1.4em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+
+    .details-btn {
+        font-size: 0.9em;
+        padding: 0.6em;
+    }
+
+    .bot {
+        padding: 1em; /* Ajuste do padding */
+    }
+
+    .bot h2 {
+        font-size: 1.4em;
+    }
+
+    .bot p {
+        font-size: 0.8em;
+    }
+
+    .details-btn {
+        font-size: 0.9em;
+        padding: 0.6em;
+    }
+}
